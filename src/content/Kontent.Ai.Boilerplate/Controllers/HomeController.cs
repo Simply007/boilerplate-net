@@ -16,10 +16,10 @@ namespace Kontent.Ai.Boilerplate.Controllers
 
         public async Task<ViewResult> Index()
         {
-            var response = await DeliveryClient.GetItemsAsync<Article>(
-                new LimitParameter(3),
-                new DepthParameter(0),
-                new OrderParameter("elements.post_date")
+            var response = await DeliveryClient.GetItemsAsync<Blog>(
+                new LimitParameter(5),
+                new DepthParameter(1),
+                new OrderParameter($"elements.{Blog.TitleCodename}")
             );
 
             return View(response.Items);

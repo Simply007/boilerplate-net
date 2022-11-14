@@ -23,7 +23,7 @@ namespace Kontent.Ai.Boilerplate.Controllers
             var parameters = new List<IQueryParameter>
             {
                 new DepthParameter(0),
-                new InFilter("system.type", "article", "cafe"),
+                new InFilter("system.type", "author", "blog"),
             };
 
             var response = await DeliveryClient.GetItemsAsync<object>(parameters);
@@ -41,6 +41,7 @@ namespace Kontent.Ai.Boilerplate.Controllers
             // TODO: The URL generation logic should be adjusted to match your website
             var url = string.Empty;
 
+            // Sitemap is deprecated
             if (system.SitemapLocation.Any())
             {
                 url = $"/{system.SitemapLocation[0]}";

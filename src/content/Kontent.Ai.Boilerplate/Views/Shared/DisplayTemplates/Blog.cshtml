@@ -1,4 +1,4 @@
-﻿@model Kontent.Ai.Boilerplate.Models.ContentTypes.Article
+﻿@model Kontent.Ai.Boilerplate.Models.ContentTypes.Blog
 
 @{
     Layout = null;
@@ -10,14 +10,15 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-4">
+    @* <div class="col-sm-4">
         <img-asset asset="@Model.TeaserImage.First()" class="img-responsive" default-width="300">
             <media-condition min-width="769" image-width="300" />
             <media-condition min-width="330" max-width="768" image-width="689" />
         </img-asset>
-    </div>
+    </div> *@
     <div class="col-sm-8">
-        @Model.Summary
+        @Model.Text
+        <p><strong>By @Model.AuthorTyped.Name</strong></p>
         <p><a class="btn btn-sm btn-primary" href="#" role="button">Read more</a></p>
     </div>
 </div>
