@@ -32,6 +32,14 @@ This boilerplate lets you easily scaffold a web project for development with Kon
 
 ## Getting started
 
+### How to run the showcase (Live 360 showcase)
+
+1. Enter the folder with `Kentico.Kontent.Boilerplate.sln` file
+1. Run `dotnet build`
+    - This regenerates the models in `~src/content/Kontent.ai.Boilerplate/Models` and rebuilt the solution
+1. Run `dotnet run --project ./src/content/Kontent.Ai.Boilerplate/Kontent.Ai.Boilerplate.csproj`
+    - That will run the project on <https://localhost:5001>
+
 ### Installation from NuGet
 
 1. Run `dotnet new --install "Kontent.Ai.Boilerplate::*"` to install the boilerplate to your machine
