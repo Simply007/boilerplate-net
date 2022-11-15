@@ -40,6 +40,8 @@ This boilerplate lets you easily scaffold a web project for development with Kon
 1. Run `dotnet run --project ./src/content/Kontent.Ai.Boilerplate/Kontent.Ai.Boilerplate.csproj`
     - That will run the project on <https://localhost:5001>
 
+> If you use <https://localhost:5001?preview> you will get the goto link for article set.
+
 ### Installation from NuGet
 
 1. Run `dotnet new --install "Kontent.Ai.Boilerplate::*"` to install the boilerplate to your machine

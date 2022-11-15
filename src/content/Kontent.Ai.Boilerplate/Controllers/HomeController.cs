@@ -17,7 +17,7 @@ namespace Kontent.Ai.Boilerplate.Controllers
         public async Task<ViewResult> Index()
         {
             var response = await DeliveryClient.GetItemsAsync<Blog>(
-                new LimitParameter(5),
+                new LimitParameter(6),
                 new DepthParameter(1),
                 new OrderParameter($"elements.{Blog.TitleCodename}")
             );
